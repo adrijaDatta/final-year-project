@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureBioAuth | Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>SecureBioAuth</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="register.html" class="active">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="auth-container">
+                <h1>Create Your Account</h1>
+                <p class="auth-subtitle">Register with your prescription and biometric data</p>
+                
+                <form id="registration-form" class="auth-form">
+                    <div class="form-group">
+                        <label for="prescription">Prescription Details</label>
+                        <textarea id="prescription" name="prescription" rows="4" placeholder="Enter your prescription details here..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>User Biometrics (10 Fingerprints)</label>
+                        <div class="biometric-input">
+                            <p>Please provide your 10 fingerprints for registration</p>
+                            <div class="fingerprint-grid">
+                                <!-- 10 fingerprint slots -->
+                                <div class="fingerprint-slot" data-finger="thumb-left">Left Thumb</div>
+                                <div class="fingerprint-slot" data-finger="index-left">Left Index</div>
+                                <div class="fingerprint-slot" data-finger="middle-left">Left Middle</div>
+                                <div class="fingerprint-slot" data-finger="ring-left">Left Ring</div>
+                                <div class="fingerprint-slot" data-finger="pinky-left">Left Pinky</div>
+                                <div class="fingerprint-slot" data-finger="thumb-right">Right Thumb</div>
+                                <div class="fingerprint-slot" data-finger="index-right">Right Index</div>
+                                <div class="fingerprint-slot" data-finger="middle-right">Right Middle</div>
+                                <div class="fingerprint-slot" data-finger="ring-right">Right Ring</div>
+                                <div class="fingerprint-slot" data-finger="pinky-right">Right Pinky</div>
+                            </div>
+                            <button type="button" id="scan-fingerprints" class="btn btn-secondary">Scan Fingerprints</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Nominee Biometrics</label>
+                        <div class="biometric-input">
+                            <p>Provide nominee's 10 fingerprints</p>
+                            <div class="fingerprint-grid">
+                                <!-- 10 fingerprint slots for nominee -->
+                                <div class="fingerprint-slot nominee" data-finger="thumb-left">Left Thumb</div>
+                                <div class="fingerprint-slot nominee" data-finger="index-left">Left Index</div>
+                                <div class="fingerprint-slot nominee" data-finger="middle-left">Left Middle</div>
+                                <div class="fingerprint-slot nominee" data-finger="ring-left">Left Ring</div>
+                                <div class="fingerprint-slot nominee" data-finger="pinky-left">Left Pinky</div>
+                                <div class="fingerprint-slot nominee" data-finger="thumb-right">Right Thumb</div>
+                                <div class="fingerprint-slot nominee" data-finger="index-right">Right Index</div>
+                                <div class="fingerprint-slot nominee" data-finger="middle-right">Right Middle</div>
+                                <div class="fingerprint-slot nominee" data-finger="ring-right">Right Ring</div>
+                                <div class="fingerprint-slot nominee" data-finger="pinky-right">Right Pinky</div>
+                            </div>
+                            <button type="button" id="scan-nominee-fingerprints" class="btn btn-secondary">Scan Nominee Fingerprints</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">Register</button>
+                </form>
+                
+                <p class="auth-redirect">
+                    Already have an account? <a href="login.html">Login here</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 SecureBioAuth. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
