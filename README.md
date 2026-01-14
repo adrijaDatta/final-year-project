@@ -272,14 +272,6 @@ This project is part of academic research at B. P. Poddar Institute of Managemen
 
 ## 📞 Contact
 
-For queries regarding this project, please contact:
-
-**B. P. Poddar Institute of Management & Technology**  
-137, V.I.P Road, Poddar Vihar  
-Kolkata - 700 052  
-Department of Information Technology
-
----
 
 <div align="center">
 
